@@ -1,0 +1,39 @@
+.main-one-gallery-due {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+  background-color: rgb(181, 163, 149);
+
+}
+
+.padding {
+  padding-top: 80px;
+}
+
+.main-icon {
+  padding-top: 50px;
+}
+
+.main-gallery img {
+  width: calc(100% / 4);
+  cursor: pointer;
+  padding: 5px;
+
+}
+
+.main-one-gallery {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 80px;
+  padding-top: 80px;
+
+}
