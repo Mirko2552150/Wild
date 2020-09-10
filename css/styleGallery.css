@@ -1,5 +1,5 @@
 .main-one-gallery-due {
-  width: 80vw;
+  width: 100vw;
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 80px;
@@ -18,11 +18,38 @@
   padding-top: 50px;
 }
 
-.main-gallery img {
-  width: calc(100% / 4);
-  cursor: pointer;
-  padding: 5px;
+.main-gallery {
 
+  /* display: flex; */
+
+}
+
+.main-gallery img {
+  width: 100%;
+  height: 600px;
+  cursor: pointer;
+  float: left;
+
+}
+
+
+.overlay {
+  width: 50%;
+  height: 600px;
+  cursor: pointer;
+  float: left;
+  background-color: white;
+  position: relative;
+  background-image: url('https://www.ipcc.ch/site/assets/uploads/sites/3/2019/10/img-placeholder.png');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+
+.main-gallery img:hover {
+  opacity: 0.3;
+  transition-duration: 1s;
 }
 
 .main-one-gallery {
@@ -36,4 +63,43 @@
   padding-bottom: 80px;
   padding-top: 80px;
 
+}
+
+/* GALLERY SHOW */
+
+.img-view {
+  width: 50%;
+  float: left;
+}
+
+.img-view-100 {
+  width: 100%;
+}
+
+.black {
+  background-color: black;
+}
+
+.black img {
+  height: 500px;
+  width: calc(100% / 6);
+  float: left;
+}
+
+@media screen and (max-width: 992px) {
+  .main-one-gallery {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+ .main-one-gallery {
+   width: 100vw;
+ }
+}
+
+@media screen and (max-width: 600px) {
+ .main-one-gallery {
+   width: 100vw;
+ }
 }

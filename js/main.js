@@ -128,7 +128,87 @@ $('#contattami, #contattami2').click(function(){
 
 });
 
+
+
 // $('.close').click(function(){
 //   $('.inserimento-dati').addClass('none');
 //
 // });
+
+
+
+class SocialNetwork {
+
+	constructor(name) { // associo il paramentro in ingresso al nome della nuova instanza
+  	this.name = name;
+  }
+
+  publish(message) { // prende il valore in ingresso dalla funzione PUBLIC riga
+  	console.log('I am publish this message on ' + this.name + ' : ' + message); // message permette di stampare helloOoOoOoOo
+}
+// console.log(SocialNetwork);
+}
+class User {
+
+	constructor() {
+  	this.socialProfiles = {}; // contruttore che crea una nuova istanza
+  }
+
+  addSocial(name, social) { // a addSocial diamo in pasto 2
+  	this.socialProfiles[name] = social;
+
+    console.log(social); // restituisce 2 oggetti INSTAGRAM + FACEBOOK
+    // console.log(name); // restituisce 2 oggetti INSTAGRAM + FACEBOOK
+    console.log(User);
+    // forEach((social, i) => socials {
+    //   console.log(social);
+    // });
+
+  }
+
+  publishAll(message) {
+
+  	Object.keys(this.socialProfiles).forEach(function (profile) {
+    	this.socialProfiles[profile].publish(message);
+      // console.log(message);
+      // Il metodo Object.keys() restituisce un array contenente le proprietà enumerabili di un dato oggetto, nel medesimo ordine fornito da un ciclo for...in  (la differenza è che un ciclo for-in enumera anche le proprietà nella catena di prototipi).
+          // Object.keys restituisce un array i quali elementi sono stringhe corrispondenti alle proprietà enumerabili trovate direttamente in obj. L'ordine delle proprietà è lo stesso di quello dato ciclando manualmente sulle proprietà dell'oggetto.
+    });
+
+  }
+}
+
+console.log(SocialNetwork);
+const u = new User(); // COSTANTE per contrarre il codice u = nuova Classe User
+
+
+const Facebook = new SocialNetwork('Facebook'); // COSTANTE per contrarre il codice u = nuova Classe SocialNetwork
+const Instagram = new SocialNetwork('Instagram'); // COSTANTE per contrarre il codice u = nuova Classe SocialNetwork
+u.addSocial(Facebook, Facebook); // Nuova classe User  con due parametri in ingresso, new SocialNetwork al cui interno si crea Instagram e Facebook come stringa in ingresso
+u.addSocial(Instagram, Instagram); // funzioni con parametri in ingresso
+
+// u.publishAll("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+
+// Users = {
+      //     name: "Instagram" {
+      //              name: 'SocialNetwork'
+      //              publish(message);
+      //              }
+      //    },
+//        {
+//           name: "Facebook" {
+//                    name: 'SocialNetwork'
+//                     publish(message);
+//                }
+//         }
+
+Instagram.publish('helloOoOoOoOo!'); // publish stampa il messaggio helloOoOoO  dentro la new l'instanza di Social Network
+Facebook.publish('hello!');
+// console.log(Facebook); // oggetto con nome:facebook
+
+// console.log(Instagram);
+// console.log(SocialNetwork);
+
+// console.log(User);
+
+// entro dentro User, il contruttore crea un OGGETTO, la funziona addSocial riceve 2 oggetti, in qeusto caso INSTAGRAM e FACEBOOK, dentro Queste 2 altre classi

@@ -63,7 +63,6 @@ nav {
    transform: scale(1.2);
    text-decoration: underline;
 
-
 }
 
 .nav-lat ul li a {
@@ -74,7 +73,7 @@ nav {
 }
 
 .nav-center {
-  width: 60%;
+  width: 50%;
   float: left;
   height: 80px;
   display: flex;
@@ -86,6 +85,10 @@ nav {
 .nav-center img {
   height: 60px;
   width: 60px;
+}
+
+.icon {
+  display: none;
 }
 
 /* SLIDESHOW*/
@@ -170,7 +173,7 @@ nav {
 }
 
 .main-one {
-  width: 80vw;
+  width: 80%;
   max-width: 1200px;
   background-color: rgb(181, 163, 149);
   margin: 0 auto;
@@ -261,8 +264,8 @@ nav {
 }
 
 .main-one-collab .img-colla:hover {
-  transform: scale(1.2);
-
+  transform: scale(1.1);
+  transition-duration: .8s;
 }
 
 .img-colla {
@@ -525,12 +528,65 @@ nav {
   overflow-y: hidden;
 }
 
+.uno, .due, .tre, .quattro {
+  margin: 0;
+}
+
 @media screen and (max-width: 992px) {
 
   .slideshow {
     height: auto;
     padding-top: 80px;
 
+  }
+
+  .img-colla {
+      width: 100vw;
+      padding: 0;
+
+  }
+
+  .img-colla img {
+      width: 100%;
+      padding: 0;
+
+  }
+
+  .main-one-collab .img-colla:hover {
+    transform: scale(1.0);
+
+  }
+
+  .text-title-bis {
+    padding-bottom: 100px;
+  }
+
+  .icon {
+    display: block;
+    font-size: 30px;
+    color: rgb(181, 163, 149);
+
+  }
+
+  .text-menu {
+    display: none;
+  }
+
+  .nav-lat {
+    width: 30%;
+  }
+
+  .nav-center {
+    width: 40%;
+  }
+
+  .uno, .due, .tre, .quattro {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .icon {
+    font-size: 30px;
   }
 
 }
@@ -565,6 +621,23 @@ nav {
 
     }
 
+    .main-one-collab .img-colla:hover {
+      transform: scale(1.0);
+
+    }
+
+    .text-title-bis {
+      padding-bottom: 100px;
+    }
+
+    .icon {
+      display: block;
+    }
+
+    .text-menu {
+      display: none;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -595,5 +668,22 @@ nav {
     .main-one-text p:first-child {
       font-size: 20px;
 
+    }
+
+    .main-one-collab .img-colla:hover {
+      transform: scale(1.0);
+
+    }
+
+    .text-title-bis {
+      padding-bottom: 100px;
+    }
+
+    .icon {
+      display: block;
+    }
+
+    .text-menu {
+      display: none;
     }
 }
